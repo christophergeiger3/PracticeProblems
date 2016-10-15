@@ -4,7 +4,8 @@ Made by Christopher Geiger on 10/14/2016
 
 Notes:
 Doesn't allow any special characters (including punctuation)
-Crashes if spaces are added to the end of an entered morse code
+Crashes if spaces are added to the end of an entered morse 
+Crashes if input is empty or begins with a space
 
 '''
 
@@ -36,7 +37,9 @@ def acceptInput():
 
 def toMorse():
     clear()
+    #TODO: Fix crash when strings start with a space
     word = input('Give me some text to translate to morse: ')
+    word = word.lower()
     for c in word:  
         print(str(morseDic[str(c)])+' ', end = '')
 
