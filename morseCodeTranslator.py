@@ -3,7 +3,7 @@
 Made by Christopher Geiger on 10/14/2016
 
 Notes:
-Doesn't allow any special characters (including punctuation
+Doesn't allow any special characters (including punctuation)
 Crashes if spaces are added to the end of an entered morse code
 
 '''
