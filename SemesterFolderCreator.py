@@ -1,4 +1,9 @@
 #! python3
+"""
+Semester Folder Creator
+Coded by: Christopher Geiger
+Purpose: Organize class folders by name at the beginning of each semester
+"""
 
 import datetime, os
 
