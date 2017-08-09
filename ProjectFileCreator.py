@@ -115,6 +115,11 @@ print("Creating a Brainstorm.txt file...")
 bs = open("BrainStorm.txt", 'w')
 bs.close()
 
+# Create a before you hand in text file in the selected project
+print("Creating a BEFORE_YOU_HAND_IN.txt file...")
+byhi = open("BEFORE_YOU_HAND_IN.txt", 'w')
+byhi.close()
+
 # Ask the user to create a docx file / what to name it / how many
 print("Create a docx file?")
 while True:
@@ -122,12 +127,9 @@ while True:
         docx_name = input("What should I name it? ")
         # Create docx file
         doc = open(docx_name + '.docx', 'w')  # What's up, docx?
-
-    print("Create another?")
-    if yes_input():
-        continue
     else:
         break
+    print("Create another?")
 
 # Ask the user to create an excel file / what to name it / how many
 print("Create an excel file?")
@@ -136,12 +138,9 @@ while True:
         docx_name = input("What should I name it? ")
         # Create xlsx file
         doc = open(docx_name + '.xlsx', 'w')
-
-    print("Create another?")
-    if yes_input():
-        continue
     else:
         break
+    print("Create another?")
 
 print('\nEnd of program')
 clear()
